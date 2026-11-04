@@ -1,4 +1,3 @@
-# macOS metadata
 .DS_Store
 .DS_store
 .AppleDouble
@@ -8,13 +7,11 @@
 .Trashes/
 .fseventsd/
 
-# Windows metadata
 Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
-# Editor settings and temporary files
 .idea/
 .vscode/
 *.swp
@@ -22,7 +19,6 @@ $RECYCLE.BIN/
 *~
 *.bak
 
-# Local build output, caches, and logs
 /out/
 .cache/
 __pycache__/
