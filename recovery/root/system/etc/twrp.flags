@@ -1,0 +1,28 @@
+/boot               emmc     /dev/block/bootdevice/by-name/boot           flags=backup=1;flashimg=1;display="Boot"
+/recovery           emmc     /dev/block/bootdevice/by-name/recovery       flags=backup=1;flashimg=1;display="Recovery"
+/dtbo               emmc     /dev/block/bootdevice/by-name/dtbo           flags=backup=1;flashimg=1;display="DTBO"
+/vbmeta             emmc     /dev/block/bootdevice/by-name/vbmeta         flags=backup=1;flashimg=1;display="VBMeta"
+/vbmeta_samsung     emmc     /dev/block/bootdevice/by-name/vbmeta_samsung flags=backup=1;flashimg=1;display="Samsung VBMeta"
+
+/system_image       emmc     /dev/block/mapper/system                    flags=backup=1;flashimg=1;display="System Image"
+/vendor_image       emmc     /dev/block/mapper/vendor                    flags=backup=1;flashimg=1;display="Vendor Image"
+/product_image      emmc     /dev/block/mapper/product                   flags=backup=1;flashimg=1;display="Product Image"
+/odm_image          emmc     /dev/block/mapper/odm                       flags=backup=1;flashimg=1;display="ODM Image"
+
+/cache              ext4     /dev/block/bootdevice/by-name/cache
+/mnt/vendor/efs     ext4     /dev/block/bootdevice/by-name/efs            flags=backup=1;display="EFS"
+/efs                ext4     /dev/block/bootdevice/by-name/sec_efs        flags=backup=1;display="Samsung EFS"
+/persist            ext4     /dev/block/bootdevice/by-name/persist        flags=backup=1;display="Persist";mounttodecrypt
+/carrier            ext4     /dev/block/bootdevice/by-name/carrier        flags=display="Carrier"
+/omr                ext4     /dev/block/bootdevice/by-name/omr            flags=display="OMR"
+/prism              ext4     /dev/block/bootdevice/by-name/prism          flags=backup=1;display="Prism"
+/optics             ext4     /dev/block/bootdevice/by-name/optics         flags=backup=1;display="Optics"
+/modem              emmc     /dev/block/bootdevice/by-name/apnhlos        flags=backup=1;display="APNHLOS"
+/radio              emmc     /dev/block/bootdevice/by-name/modem          flags=backup=1;display="Modem"
+/dsp                emmc     /dev/block/bootdevice/by-name/dsp            flags=backup=1;display="DSP"
+
+/keydata            ext4     /dev/block/bootdevice/by-name/keydata        flags=display="Keydata"
+/keyrefuge          ext4     /dev/block/bootdevice/by-name/keyrefuge      flags=display="Keyrefuge"
+
+/external_sd        auto     /dev/block/mmcblk0p1 /dev/block/mmcblk0     flags=display="Micro SDcard";storage;removable;wipeingui
+/usb-otg            auto     /dev/block/sde1 /dev/block/sde               flags=display="USB OTG";storage;removable;wipeingui

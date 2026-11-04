@@ -1,0 +1,13 @@
+ro.boot.dynamic_partitions=true
+
+ro.crypto.allow_encrypt_override=true
+ro.crypto.metadata_init_delete_all_keys.enabled=false
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.security.keystore.keytype=sakv2,gak,sgak,
+ro.hardware.keystore=mdfpp
+ro.hardware.gatekeeper=mdfpp
+ro.hardware.keystore_desede=true
+
+vendor.usb.use_ffs_mtp=1
