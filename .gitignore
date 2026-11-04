@@ -1,0 +1,30 @@
+# macOS metadata
+.DS_Store
+.DS_store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+
+# Windows metadata
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Editor settings and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+
+# Local build output, caches, and logs
+/out/
+.cache/
+__pycache__/
+*.py[cod]
+*.log
