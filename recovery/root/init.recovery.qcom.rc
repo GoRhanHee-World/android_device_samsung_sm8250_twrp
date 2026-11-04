@@ -28,7 +28,7 @@
 import /init.recovery.qcom_decrypt.rc
 
 on init
-    write /sys/class/backlight/panel0-backlight/brightness 200
+    write /sys/class/backlight/panel0-backlight/brightness 22500
     setprop prepdecrypt.setpatch true
 
 on early-init
