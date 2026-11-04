@@ -48,6 +48,9 @@ on fs
 on post-fs-data
     mkdir /data/vendor/keymaster
 
+on boot
+    start health-hal-2-1
+
 on property:crypto.ready=1
     start keymaster-sb-4-0
     start spdaemon
