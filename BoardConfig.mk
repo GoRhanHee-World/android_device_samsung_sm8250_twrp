@@ -84,12 +84,11 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_ROOT_EXTRA_FOLDERS := carrier efs sec_efs keydata keyrefuge metadata misc omr optics prism spu
 
-TARGET_SCREEN_DENSITY := 480
 TW_THEME := portrait_hdpi
 # Reserve the top of the display for the camera cutout.
 TW_Y_OFFSET := 100
 TW_H_OFFSET := -100
-TW_FRAMERATE := 60
+TW_FRAMERATE := 120
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
